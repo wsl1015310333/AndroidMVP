@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintLayout"
+
+    tools:context="com.example.wangsl.androidmvp.MainActivity">
+
+    <EditText app:layout_constraintBottom_toBottomOf="@id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入账号"
+        android:id="@+id/account"
+        tools:layout_editor_absoluteX="154dp"
+        android:layout_marginBottom="452dp" />
+    <EditText
+        app:layout_constraintTop_toTopOf="@id/account"
+
+        android:id="@+id/password"
+        android:hint="请输入密码"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="154dp"
+        android:layout_marginTop="62dp" />
+    <Button
+        android:onClick="onClick"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        android:id="@+id/login"
+      android:text="登陆"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="154dp"
+        android:layout_marginTop="19dp" />
+    <ProgressBar
+
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:layout_editor_absoluteY="313dp"
+        tools:layout_editor_absoluteX="181dp" />
+
+</android.support.constraint.ConstraintLayout>
